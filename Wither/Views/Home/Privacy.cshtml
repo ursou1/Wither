@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>Отправка сообщения</h1>
+
+<p>Заполните следущие данные</p>
+
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Тема сообщения</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Интересующая тема">
+</div>
+
+@*@using (Html.BeginForm("Privacy", "Home", FormMethod.Post))
+{
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Ваш текст</label>
+        <label for="exampleFormControlTextarea1" class="form-label"></label>
+
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">@Html.TextAreaFor(model => model.Body, new { rows = "3", cols = "20" })</textarea>
+    </div>
+}*@
+
+<div>
+    <a asp-area="" asp-controller="Home" asp-action="SendEmailCustom">Отправить</a>
+</div>
+<button type="button" class="btn btn-secondary" asp-area="" asp-controller="Home" asp-action="SendEmailCustom">Отправить</button>
+
+@using (Html.BeginForm("Buy", "Home", FormMethod.Post))
+{
+    <input type="hidden" value="@ViewBag.BookId" name="BookId" />
+            <p>Введите свое имя </p>
+            <input type="text" name="Person" />
+
+            <td><p>Введите адрес :</p></td>
+            <input type="text" name="Address" /> 
+
+            <input type="submit" value="Отправить" /> 
+            <td></td>
+}

@@ -1,0 +1,36 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.Textovik1 {
+    font-family: 'Alfa Slab One', cursive;
+}
+.Textovik {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 20px;
+}
+.Textovik2 {
+    font-family: 'Zen Kurenaido', sans-serif;
+    
+}
+.Textovik3 {
+    font-family: 'PT Sans', sans-serif;
+    
+}
+
+.Textovik4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+.MoyBackground {
+    position: relative;
+    background: url(/images/ex_1.png) 100% 100% no-repeat;
+    background-size:  contain;
+
+}
+
+
+

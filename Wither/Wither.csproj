@@ -1,0 +1,71 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ApplicationIcon></ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="img\or_1.jpg" />
+    <None Remove="img\or_10.jpg" />
+    <None Remove="img\or_11.jpg" />
+    <None Remove="img\or_12.jpg" />
+    <None Remove="img\or_2.jpg" />
+    <None Remove="img\or_3.jpg" />
+    <None Remove="img\or_4.jpg" />
+    <None Remove="img\or_5.jpg" />
+    <None Remove="img\or_6.jpg" />
+    <None Remove="img\or_7.jpg" />
+    <None Remove="img\or_8.jpg" />
+    <None Remove="img\or_9.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\or_2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\or_1.jpg" />
+    <Resource Include="img\or_10.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\or_11.jpg" />
+    <Resource Include="img\or_12.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="img\or_3.jpg" />
+    <Resource Include="img\or_4.jpg" />
+    <Resource Include="img\or_5.jpg" />
+    <Resource Include="img\or_6.jpg" />
+    <Resource Include="img\or_7.jpg" />
+    <Resource Include="img\or_8.jpg" />
+    <Resource Include="img\or_9.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\fonts\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\or_1.jpg" />
+    <None Include="wwwroot\images\or_10.jpg" />
+    <None Include="wwwroot\images\or_11.jpg" />
+    <None Include="wwwroot\images\or_12.jpg" />
+    <None Include="wwwroot\images\or_2.jpg" />
+    <None Include="wwwroot\images\or_3.jpg" />
+    <None Include="wwwroot\images\or_4.jpg" />
+    <None Include="wwwroot\images\or_5.jpg" />
+    <None Include="wwwroot\images\or_6.jpg" />
+    <None Include="wwwroot\images\or_7.jpg" />
+    <None Include="wwwroot\images\or_8.jpg" />
+    <None Include="wwwroot\images\or_9.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="2.15.0" />
+  </ItemGroup>
+
+</Project>
