@@ -5,10 +5,10 @@
 
 <p>Заполните следущие данные</p>
 
-<div class="mb-3">
+@*<div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Тема сообщения</label>
     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Интересующая тема">
-</div>
+</div>*@
 
 @*@using (Html.BeginForm("Privacy", "Home", FormMethod.Post))
 {
@@ -23,17 +23,15 @@
 <div>
     <a asp-area="" asp-controller="Home" asp-action="SendEmailCustom">Отправить</a>
 </div>
-<button type="button" class="btn btn-secondary" asp-area="" asp-controller="Home" asp-action="SendEmailCustom">Отправить</button>
+@*<button type="button" class="btn btn-secondary" asp-area="" asp-controller="Home" asp-action="SendEmailCustom">Отправить</button>*@
 
-@using (Html.BeginForm("Buy", "Home", FormMethod.Post))
+@using (Html.BeginForm("Text", "Home", FormMethod.Post))
 {
-    <input type="hidden" value="@ViewBag.BookId" name="BookId" />
-            <p>Введите свое имя </p>
-            <input type="text" name="Person" />
-
-            <td><p>Введите адрес :</p></td>
-            <input type="text" name="Address" /> 
+            <p>Введите свой текст!!!!</p>
+            @Html.TextBox("TextMessage", "")
 
             <input type="submit" value="Отправить" /> 
-            <td></td>
+    <a asp-area="" asp-controller="Home" asp-action="Text">Отправить</a>
+    <a asp-area="" asp-controller="Home" asp-action="SendEmailCustom">Отправить</a>
 }
+

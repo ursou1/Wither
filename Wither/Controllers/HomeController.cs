@@ -29,11 +29,22 @@ namespace Wither.Controllers
         {
             return View();
         }
-        public IActionResult SendEmailCustom()
+
+        //[HttpPost]
+        //public string Text(string TextMessage)
+        //{
+        //    //service.GetText(TextMessage);
+        //    return service.GetText(TextMessage);
+        //}
+
+        [HttpPost]
+        public IActionResult SendEmailCustom(string TextMessage)
         {
+            service.GetText(TextMessage);
             service.SendEmailCustom();
             return RedirectToAction("Index");
         }
+        
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

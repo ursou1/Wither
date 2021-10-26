@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Wither.Controllers;
 
 namespace Wither
 {
@@ -16,6 +17,14 @@ namespace Wither
             this.logger = logger;
         }
 
+        public string rr;
+        public string GetText(string TextMessage)
+        {
+            rr = TextMessage.ToString();
+            return TextMessage.ToString();
+            
+        }
+
         //MailKit.Net.Smtp.SmtpClient
         public void SendEmailCustom()
         {
@@ -25,7 +34,8 @@ namespace Wither
                 message.From.Add(new MailboxAddress("Varmilo Kboard", "joker320kingkobra25rus@gmail.com")); //отправитель сообщения
                 message.To.Add(new MailboxAddress("xorekvblendere@mail.ru")); //адресат сообщения
                 message.Subject = "Varmilo"; //тема сообщения
-                message.Body = new BodyBuilder() { HtmlBody = "<div style=\"color: red;\">Сообщение от сайта)))</div>" }.ToMessageBody();
+                message.Body = new BodyBuilder() { HtmlBody = rr }.ToMessageBody();
+                //message.Body = new BodyBuilder() { HtmlBody = "<div style=\"color: red;\">Сообщение от сайта)))</div>" }.ToMessageBody();
 
                 using (MailKit.Net.Smtp.SmtpClient client = new MailKit.Net.Smtp.SmtpClient())
                 {

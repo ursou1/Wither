@@ -32,5 +32,35 @@
 
 }
 
+.section_1 {
+    width: 100%;
+    min-width: 1226px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.section-2 {
+    height: 0;
+    padding-bottom: 45.7421875%;
+    position: relative;
+    background-image: url(/images/22.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.text-box {
+    width: 7.8rem;
+    padding-top: 4.53rem;
+    padding-left: 5.5rem;
+    color: #fff;
+}
+
+.secty {
+    font-size: .52rem;
+    line-height: 1;
+}
 
