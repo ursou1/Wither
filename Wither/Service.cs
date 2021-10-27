@@ -17,30 +17,22 @@ namespace Wither
             this.logger = logger;
         }
 
-        public string rr;
-        public string GetText(string TextMessage)
-        {
-            rr = TextMessage.ToString();
-            return TextMessage.ToString();
-            
-        }
 
-        //MailKit.Net.Smtp.SmtpClient
         public void SendEmailCustom()
         {
             try
             {
                 MimeMessage message = new MimeMessage();
-                message.From.Add(new MailboxAddress("Varmilo Kboard", "joker320kingkobra25rus@gmail.com")); //отправитель сообщения
-                message.To.Add(new MailboxAddress("xorekvblendere@mail.ru")); //адресат сообщения
+                message.From.Add(new MailboxAddress("Varmilo Kboard", "joker320kingkobra25rus@gmail.com")); 
+                message.To.Add(new MailboxAddress("xorekvblendere@mail.ru"));
                 message.Subject = "Varmilo"; //тема сообщения
-                message.Body = new BodyBuilder() { HtmlBody = rr }.ToMessageBody();
-                //message.Body = new BodyBuilder() { HtmlBody = "<div style=\"color: red;\">Сообщение от сайта)))</div>" }.ToMessageBody();
+                //message.Body = new BodyBuilder() {  }.ToMessageBody();
+                message.Body = new BodyBuilder() { HtmlBody = "<div style=\"color: red;\">Сообщение от сайта)))</div>" }.ToMessageBody();
 
                 using (MailKit.Net.Smtp.SmtpClient client = new MailKit.Net.Smtp.SmtpClient())
                 {
-                    client.Connect("smtp.gmail.com", 465, true); //либо использум порт 465     //587
-                    client.Authenticate("joker320kingkobra25rus@gmail.com", "iqsvcrjpljgemuco"); //логин-пароль от аккаунта
+                    client.Connect("smtp.gmail.com", 465, true); //587
+                    client.Authenticate("joker320kingkobra25rus@gmail.com", "iqsvcrjpljgemuco");
                     client.Send(message);
 
                     client.Disconnect(true);

@@ -45,22 +45,12 @@
 }
 .section-2 {
     height: 0;
-    padding-bottom: 45.7421875%;
+    padding-bottom: 45%;
     position: relative;
     background-image: url(/images/22.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.text-box {
-    width: 7.8rem;
-    padding-top: 4.53rem;
-    padding-left: 5.5rem;
-    color: #fff;
-}
 
-.secty {
-    font-size: .52rem;
-    line-height: 1;
-}
 

@@ -29,18 +29,9 @@ namespace Wither.Controllers
         {
             return View();
         }
-
-        //[HttpPost]
-        //public string Text(string TextMessage)
-        //{
-        //    //service.GetText(TextMessage);
-        //    return service.GetText(TextMessage);
-        //}
-
-        [HttpPost]
-        public IActionResult SendEmailCustom(string TextMessage)
+       
+        public IActionResult SendEmailCustom()
         {
-            service.GetText(TextMessage);
             service.SendEmailCustom();
             return RedirectToAction("Index");
         }
