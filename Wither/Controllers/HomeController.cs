@@ -11,18 +11,20 @@ namespace Wither.Controllers
 {
     public class HomeController : Controller
     {
+        KboardContext db;
         private readonly ILogger<HomeController> _logger;
         private readonly Service service;
 
-        public HomeController(ILogger<HomeController> logger, Service service)
+        public HomeController(ILogger<HomeController> logger, Service service, KboardContext context)
         {
+            db = context;
             _logger = logger;
             this.service = service;
         }
 
         public IActionResult Index()
         {
-            return View();
+            return View(db.Kboards.ToList());
         }
 
         public IActionResult Privacy()
