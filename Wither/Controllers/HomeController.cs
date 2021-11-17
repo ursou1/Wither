@@ -31,10 +31,15 @@ namespace Wither.Controllers
         {
             return View();
         }
-       
+
+        public IActionResult Product()
+        {
+            return View();
+        }
+
         public IActionResult SendEmailCustom()
         {
-            service.SendEmailCustom();
+            //service.SendEmailCustom();
             return RedirectToAction("Index");
         }
         

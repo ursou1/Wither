@@ -23,7 +23,7 @@ namespace Wither
             try
             {
                 MimeMessage message = new MimeMessage();
-                message.From.Add(new MailboxAddress("Varmilo Kboard", "joker320kingkobra25rus@gmail.com")); 
+                message.From.Add(new MailboxAddress("Varmilo Kboard", "joker320kingkobra25rus@gmail.com"));
                 message.To.Add(new MailboxAddress("xorekvblendere@mail.ru"));
                 message.Subject = "Varmilo"; //тема сообщения
                 //message.Body = new BodyBuilder() {  }.ToMessageBody();
