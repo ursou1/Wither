@@ -17,14 +17,14 @@ namespace Wither.Controllers
 
         public HomeController(ILogger<HomeController> logger, Service service, KboardContext context)
         {
-            db = context;
             _logger = logger;
             this.service = service;
+            db = context;
         }
 
         public IActionResult Index()
         {
-            return View(db.Kboards.ToList());
+            return View();
         }
 
         public IActionResult Privacy()
@@ -34,7 +34,7 @@ namespace Wither.Controllers
 
         public IActionResult Product()
         {
-            return View();
+            return View(db.Kboards.ToList());
         }
 
         public IActionResult SendEmailCustom()
