@@ -11,15 +11,15 @@
 <h3>Форма оформления покупки</h3>
 <p>Для оформления покупки заполните следующие поля:</p>
 <form method="post">
-    <input type="hidden" value="@ViewBag.PhoneId" name="PhoneId" />
+    <input type="hidden" value="@ViewBag.KboardId" name="KboardId" />
     <table>
-        <tr>
-            <td>Имя:</td>
-            <td><input type="text" name="User" /> </td>
-        </tr>
         <tr>
             <td>Адрес:</td>
             <td><input type="text" name="Address" /></td>
+        </tr>
+        <tr>
+            <td>Точка выдачи:</td>
+            <td><input type="text" name="Point" /> </td>
         </tr>
         <tr>
             <td>Телефон:</td>

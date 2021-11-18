@@ -54,7 +54,7 @@ namespace Wither.Controllers
         public IActionResult Buy(int? id)
         {
             if (id == null) return RedirectToAction("Index");
-            ViewBag.PhoneId = id;
+            ViewBag.KboardId = id;
             return View();
         }
         [HttpPost]

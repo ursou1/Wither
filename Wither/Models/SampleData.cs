@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Wither.Models;
 
-namespace Wither.Models
+namespace Wither
 {
     public class SampleData
     {
