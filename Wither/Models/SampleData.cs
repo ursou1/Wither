@@ -15,20 +15,20 @@ namespace Wither
                 context.Kboards.AddRange(
                     new Kboard
                     {
-                        Name = "iPhone X",
-                        Description = "Apple",
+                        Name = "Kboard X",
+                        Description = "Kboard",
                         Price = 14999
                     },
                     new Kboard
                     {
-                        Name = "Samsung Galaxy Edge",
-                        Description = "Samsung",
+                        Name = "Kboard  Edge",
+                        Description = "Kboard",
                         Price = 12999
                     },
                     new Kboard
                     {
-                        Name = "Pixel 3",
-                        Description = "Google",
+                        Name = "Kboard 3",
+                        Description = "Kboard",
                         Price = 11999
                     }
                 );

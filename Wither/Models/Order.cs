@@ -7,7 +7,7 @@ namespace Wither.Models
 {
     public class Order
     {
-        public int Id { get; set; }
+        public int OrderId { get; set; }
         public DateTime OrderTime { get; set; } = DateTime.Now;
         public string Status { get; set; } = "Не определен";
         public string Address { get; set; } 

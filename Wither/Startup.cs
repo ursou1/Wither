@@ -24,9 +24,9 @@ namespace Wither
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<Service>();
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<KboardContext>(options => options.UseSqlServer(connection));
-            services.AddTransient<Service>();
             services.AddControllersWithViews();
         }
 
